@@ -1,3 +1,106 @@
 * {
     box-sizing: border-box;
 }
+
+
+.foodServices {
+    font-size: 25px;
+    color: orange;
+    font-style: italic;
+}
+
+.dedicatedChefs {
+    font-size: 35px;
+    font-family: cursive;
+    margin: 0.5rem;
+}
+
+.chefSection {
+    display: grid;
+    place-items: center;
+}
+
+.chefsList {
+    display: flex;
+}
+
+.chefOne {
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 30px 10px gray;
+    border-radius: 25px;
+}
+
+.chefTwo {
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 30px 10px gray;
+    border-radius: 25px;
+}
+
+.chefThree {
+    display: grid;
+    place-items: center;
+    margin: 2rem;
+    padding: 2rem;
+    box-shadow: 10px 10px 30px 10px gray;
+    border-radius: 25px;
+}
+
+.ChefOneImage {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.ChefTwoImage {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.ChefThreeImage {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+}
+
+.chefName {
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.occupation {
+    font-size: 1.5rem;
+}
+
+.socialContact {
+    display: flex;
+    margin: 1rem;
+}
+
+.alink {
+    color: orange;
+}
+
+.facebook {
+    color: orange;
+    font-size: 25px;
+    margin: 0rem 1rem;
+}
+
+.twitter {
+    color: orange;
+    font-size: 25px;
+    margin: 0rem 1rem;
+}
+
+.insatgram {
+    color: orange;
+    font-size: 25px;
+    margin: 0rem 1rem;
+}
