@@ -1,1 +1,1 @@
-Additional ideas for the website
+A simple restaurant website made by Hani, Yousif, Ali, Danah.
