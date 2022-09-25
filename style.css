@@ -3,14 +3,109 @@
 }
 
 
-
-.contact--icons{
-    width:24px;
-    height:24px;
-    stroke: orange;
-    stroke-width: 1.5;
+/* initializing the whole contact section  */
+.contactSec--MainContainer *{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
 }
 
+
+.contactSec--MainContainer{
+    font-size:62.5%;
+    font-family:"Rublik", sans-serif;
+    max-width:80%;
+    margin:0 auto;
+   
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+}
+
+/* The h2 properties and underline */
+.contactSec--MainContainer header{
+    margin-bottom:1.5rem;
+}
+.contactSec--MainContainer h2{
+    font-size:1.6rem;
+    font-weight: 700;
+    display: inline-block;
+    padding-bottom: 0.8rem;
+    position: relative;
+    margin-bottom: 0.8rem;
+}
+.contactSec--MainContainer h2:before{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 1px;
+    bottom: 0;
+    left: 25%;
+    border-bottom: 2px solid orange;
+}
+/* h2 properties ends here */
+
+.contactSec--MainContainer header p {
+    padding: 0 4.8rem;
+    font-size:0.8rem;
+    line-height:1.5;
+    color:#999;
+
+}
+
+
+/* contact info properties */
+.info--{
+    display:flex;
+    column-gap: 1.4rem;
+    align-items: center;
+    justify-content: center;
+}
+.info-- figure{
+    width:10rem;
+    height:7rem;
+    padding:0.8rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom:1.5rem;
+    border-radius:10px;
+    box-shadow: 0 0 0.3rem rgb(0 0 0/5%);
+    transition: all 0.3s;
+}
+.info-- figure:hover{
+    box-shadow: 0 0 0.9rem rgb(0 0 0/10%);
+    transform:translateY(-0.2rem);
+
+}
+.info-- p{
+    color:#999;
+}
+/* icons properties */
+.contact--icons{
+    width:35px;
+    height:35px;
+    fill: orange;
+    stroke-width: 1.5;
+    border: 1px orange solid;
+    padding:0.4rem;
+    border-radius: 100%;
+    margin-bottom:0.8rem;
+}
+
+
+.info-- figure h4{
+    margin-bottom:0.4rem;
+}
+
+.info-- figure p{
+    color:#999;
+}
+
+/*  */
 /* Map properties */
 
 iframe{
