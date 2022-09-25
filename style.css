@@ -43,7 +43,7 @@
     height: 1px;
     bottom: 0;
     left: 25%;
-    border-bottom: 2px solid orange;
+    border-bottom: 2px solid #feb451;
 }
 /* h2 properties ends here */
 
@@ -74,11 +74,11 @@
     margin-bottom:1.5rem;
     border-radius:10px;
     box-shadow: 0 0 0.3rem rgb(0 0 0/5%);
-    transition: all 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 .info-- figure:hover{
-    box-shadow: 0 0 0.9rem rgb(0 0 0/10%);
-    transform:translateY(-0.2rem);
+    box-shadow: 0 0 0.9rem rgb(0 0 0/8%);
+    transform:translateY(-0.1rem);
 
 }
 .info-- p{
@@ -88,9 +88,9 @@
 .contact--icons{
     width:35px;
     height:35px;
-    fill: orange;
+    fill: #feb451;
     stroke-width: 1.5;
-    border: 1px orange solid;
+    border: 1px #feb451 solid;
     padding:0.4rem;
     border-radius: 100%;
     margin-bottom:0.8rem;
@@ -106,15 +106,59 @@
 }
 
 /*  */
+
+.contactForm--container{
+    width:75%;
+    display:flex;
+    align-items: center;
+    justify-content: flex-start;
+    overflow: hidden;
+    background-color: #feb451;
+    border-radius: 0.6rem;
+}
 /* Map properties */
 
 iframe{
-    height:300px;
-    width:300px;
+    height:250px;
+    width:350px;
+    border-top-right-radius:0.4rem ;
+    border-bottom-right-radius:0.4rem;
 }
 .contactForm{
     display:flex;
-    flex-direction:column;
-    align-items: center;
-    gap:0.8rem;
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 0.6rem;   
+}
+.cont--input{
+    background-color: #fff0dc;
+    color:#7f5a29;
+    border:none;
+    padding:0.4rem 0.8rem;
+    border-radius: 0.4rem;
+
+}
+.cont--input::placeholder{
+    color:#feb451;
+    letter-spacing: 0.08rem;
+}
+.cont--input:focus{
+    outline-style: none;
+    box-shadow: 0 0 0 0.2rem #fff0dc74;
+}
+.cont--textArea{
+    height: 4rem;
+    resize: none;
+    padding:0.4rem 0.8rem;
+    margin-bottom: 0.6rem;
+}
+
+.sub-btn{
+    
+    align-self: flex-start;
+    background-color: #7f5a29;
+    color:#fff0dc;
+    letter-spacing: 0.1rem;
+    /* padding-right:2rem; */
+    width:40%;
 }
