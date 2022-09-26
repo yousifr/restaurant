@@ -1,3 +1,22 @@
 * {
     box-sizing: border-box;
 }
+
+/* info section */
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+}
+
+.container{
+    max-width: 300px;
+    text-align:center;
+    padding:20px 10px;
+    border-style:double;
+}
+
+/* svg.fishicon, svg.cheficon, svg.priceicon, svg.clienticon { */
+    /* color: orange; */
+/* } */
