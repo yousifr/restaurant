@@ -8,15 +8,22 @@
     flex-wrap: wrap;
     justify-content:center;
     align-items: center;
+    margin: 20px auto;
 }
 
 .container{
     max-width: 300px;
     text-align:center;
     padding:20px 10px;
-    border-style:double;
+    /* border-bottom-color: #FF7546 ; */
+    /* border-bottom-style: groove; */
+    border-style: double outset double double;
+    background-color: #FF7546;
+    border-color: black;
+    box-shadow: 10px 10px; 
+
 }
 
-/* svg.fishicon, svg.cheficon, svg.priceicon, svg.clienticon { */
-    /* color: orange; */
-/* } */
+h3, p {
+    color: white;
+}
