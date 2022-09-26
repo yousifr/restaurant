@@ -29,7 +29,7 @@
     margin-bottom:1.5rem;
 }
 .contactSec--MainContainer h2{
-    font-size:1.6rem;
+    font-size:1.8rem;
     font-weight: 700;
     display: inline-block;
     padding-bottom: 0.8rem;
@@ -43,13 +43,13 @@
     height: 1px;
     bottom: 0;
     left: 25%;
-    border-bottom: 2px solid #feb451;
+    border-bottom: 4px solid #feb451;
 }
 /* h2 properties ends here */
 
 .contactSec--MainContainer header p {
     padding: 0 4.8rem;
-    font-size:0.8rem;
+    font-size:1.2rem;
     line-height:1.5;
     color:#999;
 
@@ -81,8 +81,13 @@
     transform:translateY(-0.1rem);
 
 }
+.info-- h4{
+    font-size:0.8rem;
+}
 .info-- p{
     color:#999;
+    font-size:0.8rem;
+    letter-spacing: 0.05rem;
 }
 /* icons properties */
 .contact--icons{
@@ -114,21 +119,27 @@
     justify-content: flex-start;
     overflow: hidden;
     background-color: #feb451;
+    background-image: linear-gradient(to right,#fecb85,#feb451 );
+    box-shadow: 0 0 0.5rem rgb(0 0 0/14%);
+
     border-radius: 0.6rem;
+    margin-bottom: 1.5rem;
 }
 /* Map properties */
 
 iframe{
-    height:250px;
-    width:350px;
-    border-top-right-radius:0.4rem ;
-    border-bottom-right-radius:0.4rem;
+    height:400px;
+    width:350px;   
 }
 .contactForm{
     display:flex;
     flex-direction: column;
+    justify-content: center;
     margin: 0 auto;
-    row-gap: 0.6rem;   
+    row-gap: 1rem; 
+    height:20rem; 
+    padding:1rem 1.5rem;
+     
 }
 .cont--input{
     background-color: #fff0dc;
@@ -136,10 +147,11 @@ iframe{
     border:none;
     padding:0.4rem 0.8rem;
     border-radius: 0.4rem;
+    transition:box-shadow 0.3s;
 
 }
 .cont--input::placeholder{
-    color:#feb451;
+    color:#feb35184;
     letter-spacing: 0.08rem;
 }
 .cont--input:focus{
@@ -152,13 +164,126 @@ iframe{
     padding:0.4rem 0.8rem;
     margin-bottom: 0.6rem;
 }
+.contactForm label{
+    align-self: flex-start;
+    color:#fff0dc;
+    margin-bottom:0.3rem;
+    font-size:1rem;
+}
+.contactForm div{
+    display:flex;
+    flex-direction: column;
+}
 
 .sub-btn{
     
     align-self: flex-start;
     background-color: #7f5a29;
-    color:#fff0dc;
+    
+    color:#fed297;
     letter-spacing: 0.1rem;
     /* padding-right:2rem; */
-    width:40%;
+    width:60%;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+.sub-btn:hover, .sub-btn:link, .sub-btn:visited{
+    background-color: #986c31;
+    color:#fff0dc;
+    cursor: pointer;
+    box-shadow: 0 0.3rem 0.6rem rgb(0 0 0/20%);
+}
+
+
+/* media queries styling*/
+@media (max-width:1100px){
+    .contactForm--container{
+        width:80%;
+    }
+}
+@media (max-width:960px){
+    .contactForm--container{
+        width:90%;
+    }
+    iframe{
+        height:400px;
+        width:50%;   
+    }
+    .contactForm{
+        width:50%;
+        margin: 0 auto;         
+    }
+
+}
+
+@media (max-width:730px){
+    iframe{
+        width:40%;
+    }
+    .contactForm{
+        width:60%;
+    }
+}
+
+@media (max-width:650px){
+    .contactForm--container{
+        flex-direction: column-reverse;
+    }
+    iframe{
+        width:100%;
+        height:60%;
+    }
+    .contactForm{
+        width:80%;
+        margin:1rem 0;
+    }
+}
+
+@media (max-width:560px){
+    .contactSec--MainContainer header p {
+        padding: 0 3.2rem;
+        font-size:0.8rem;        
+    }
+    .info--{
+        margin:0 1rem;
+    }
+    .info-- figure{
+        width:8rem;
+    }
+}
+@media (max-width:485px){
+    .info--{
+        flex-direction: column;
+    }
+    .contactForm{
+        width:100%;
+        margin:1rem 0;
+    }
+    .contactSec--MainContainer header p {
+        padding: 0 2rem;
+    }
+}
+@media (max-width:390px){
+    .contactSec--MainContainer header p {
+        padding: 0 0.8rem;
+    }
+    .contactForm{
+        width:100%;
+
+    }
+    .cont--input::placeholder{
+        font-size:0.6rem;
+    }
+    .cont--input:focus{
+        font-size:0.6rem;
+    }
+    .sub-btn{
+        font-size:0.6rem;
+    }
+    .contactSec--MainContainer header p {
+        padding: 0 2rem;
+        font-size:0.8rem;
+    }
+    .contactForm label{
+        font-size:0.8rem;
+    }
 }

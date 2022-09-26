@@ -44,7 +44,7 @@
                   
                   </span>
                 <h4>Our Address</h4>
-                <p>Lorem ipsum dolor sit amet.</p>
+                <p>Lorem ipsum dolor sit.</p>
             </figure>
             <figure>
                 <span><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="contact--icons">
@@ -71,11 +71,26 @@
             </iframe>
             
             <form action="submit" class="contactForm">
-                <input type="text" placeholder="John Smith" class="cont--input">
-                <input type="email" placeholder="me@example.com" class="cont--input">
-                <input type="tel" placeholder="+1 000 000" class="cont--input">
-                <textarea class="cont--input cont--textArea" name="" id="" cols="30" rows="10"  placeholder="Oh, hi guys!"></textarea>
-                <button class="cont--input sub-btn">Send</button>
+                <div>
+                    <label for="UserName">Full Name :</label>
+                    <input type="text" placeholder="John Smith" class="cont--input" id="UserName">
+                </div>
+                <div>
+                    <label for="UserEmail">E-mail :</label>
+                    <input type="email" placeholder="me@example.com" class="cont--input" id="UserEmail">
+                </div>
+                <div>
+                    <label for="PhoneNo">Phone number :</label>
+                    <input type="tel" placeholder="+1 000 000" class="cont--input" id="PhoneNo"> 
+                </div>
+                <div>
+                    <label for="msgArea">
+                        Your message :
+                    </label>
+                    <textarea class="cont--input cont--textArea" name="" id="msgArea" cols="30" rows="10"  placeholder="Oh, hi guys!"></textarea>
+                </div>
+                
+                <button class="cont--input sub-btn">Send message</button>
             </form>
         </main>
 
