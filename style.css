@@ -5,7 +5,7 @@
 
 .foodServices {
     font-size: 25px;
-    color: orange;
+    color: #FF7546;
     font-style: italic;
 }
 
@@ -84,23 +84,71 @@
 }
 
 .alink {
-    color: orange;
+    color: #FF7546;
 }
 
 .facebook {
-    color: orange;
+    color: #FF7546;
     font-size: 25px;
     margin: 0rem 1rem;
 }
 
 .twitter {
-    color: orange;
+    color: #FF7546;
     font-size: 25px;
     margin: 0rem 1rem;
 }
 
 .insatgram {
-    color: orange;
+    color: #FF7546;
     font-size: 25px;
     margin: 0rem 1rem;
+}
+
+
+@media only screen and (max-width:1200px) {
+
+    /* html,
+    body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        overflow-x: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    } */
+
+
+    .chefSection {
+
+        display: grid;
+        justify-items: center;
+        width: 100%;
+        height: auto;
+    }
+
+
+    .chefsList {
+        display: grid;
+        place-items: center;
+        width: 50%;
+        height: auto;
+    }
+
+    .chefOne {
+        width: 100%;
+        height: auto;
+    }
+
+    .chefTwo {
+        width: 100%;
+        height: auto;
+    }
+
+    .chefThree {
+        width: 100%;
+        height: auto;
+    }
+
 }
