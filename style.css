@@ -7,8 +7,6 @@
 .contactSec--MainContainer *{
     margin:0;
     padding:0;
-    box-sizing: border-box;
-    
 }
 
 
@@ -44,7 +42,7 @@
     height: 1px;
     bottom: 0;
     left: 25%;
-    border-bottom: 4px solid #feb451;
+    border-bottom: 4px solid #f69220;
 }
 /* h2 properties ends here */
 
@@ -95,9 +93,9 @@
 .contact--icons{
     width:35px;
     height:35px;
-    fill: #feb451;
+    fill: #f69220;
     stroke-width: 1.5;
-    border: 1px #feb451 solid;
+    border: 1px #f69220 solid;
     padding:0.4rem;
     border-radius: 100%;
     margin-bottom:0.8rem;
@@ -120,8 +118,8 @@
     align-items: center;
     justify-content: flex-start;
     overflow: hidden;
-    background-color: #feb451;
-    background-image: linear-gradient(to right,#fecb85,#feb451 );
+    background-color: #f69220;
+    background-image: linear-gradient(to right,#fecb85,#f69220 );
     box-shadow: 0 0.9rem 1.5rem rgb(0 0 0/12%);
 
     border-radius: 0.6rem;
@@ -294,4 +292,81 @@ hr{
 	border: 0;
 	box-shadow: 0 0.05rem 0 0 #8c8b8b33 inset;
     margin-bottom:6.2rem;
+}
+
+
+
+/* FOOTER PROPERTIES START HERE !!! */
+footer *{
+    margin:0;
+    padding:0;
+}
+footer{
+    font-size:62.5%;
+    font-family:"Rublik", sans-serif;
+    max-width:80%;
+    margin:0 auto;
+    margin-bottom:4.8rem;
+
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-content: center;
+    gap:3.2rem;
+}
+
+footer section{
+    display:flex;
+    flex-direction: column;
+    gap:2.2rem;
+    margin:0 auto;
+}
+footer section h3{
+    font-size:1rem;
+}
+footer section p{
+    color:#999;
+    font-size:0.8rem;
+    
+}
+.logo--container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+}
+.logoTypo--cont{
+    display:flex;
+    align-items: center;
+    gap:0.8rem;
+}
+.logo--container h2{
+    font-size:1.6rem;
+}
+.logo--container p{
+    font-size:0.8rem;
+}
+.footer--logo{
+    height:60px;
+    width:100px; 
+}
+.socialMed--container{
+    display:flex;
+    column-gap: 0.8rem;
+}
+.icon--cont{
+    display:flex;
+    align-items: center;
+    background-color: #333;
+    border-radius: 50%;
+    transition: background-color 0.5s, transform 0.3s;
+}
+.icon--cont:hover{
+    background-color: #f69220;
+    transform: translateY(-3px);
+}
+.footer--icon{
+    padding:0.6rem;
+    fill:#fff;
+    height:18px;
+    width:18px;
 }
