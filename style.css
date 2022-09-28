@@ -215,24 +215,27 @@ footer{
 }
 
 footer section{
+    height:160px;
     display:flex;
     flex-direction: column;
     align-self: flex-start;
-    gap:2.4rem;
+    gap:1.8rem;
     margin:0 auto;
 }
 footer section h3{
-    font-size:1rem;
+    padding-top:1.2rem;
+    font-size:1.2rem;
 }
 footer section p{
     color:#999;
-    font-size:0.8rem;
+    font-size:0.9rem;
     
 }
 .logo--container {
     display: flex;
     flex-direction: column;
-    row-gap: 0.8rem;
+    row-gap: 2.2rem;
+    height:160px;
 }
 .logoTypo--cont{
     display:flex;
@@ -243,7 +246,7 @@ footer section p{
     font-size:1.6rem;
 }
 .logo--container p{
-    font-size:0.8rem;
+    font-size:1rem;
 }
 .footer--logo{
     height:60px;
@@ -269,6 +272,14 @@ footer section p{
     fill:#fff;
     height:18px;
     width:18px;
+}
+
+
+hr{
+    height: 10px;
+	border: 0;
+	box-shadow: 0 0.05rem 0 0 #8c8b8b33 inset;
+    margin-bottom:6.2rem;
 }
 
 /* media queries styling*/
@@ -373,12 +384,7 @@ footer section p{
 }
 
 
-hr{
-    height: 10px;
-	border: 0;
-	box-shadow: 0 0.05rem 0 0 #8c8b8b33 inset;
-    margin-bottom:6.2rem;
-}
+
 
 
 
