@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 nav {
     
     font-size: large;
@@ -56,3 +57,106 @@ nav ul li a:hover {
     height: auto;
 }
 
+@media only screen and (max-width: 895px) and (min-width: 600px) {
+
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        font-size:medium;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+
+    nav img {
+     display: none;
+    }
+   
+}
+
+
+@media only screen and (max-width: 599px) and (min-width: 100px) {
+
+    nav {
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: center;            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+    }
+
+    .nav-1 {
+        
+            font-family: Georgia, "Times New Roman", serif;
+            font-size: 1.25em;
+            font-weight: bold;
+            text-align: center;            
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: stretch;
+            align-content: stretch;
+        
+    }
+
+    .nav-3 {
+        
+        font-family: Georgia, "Times New Roman", serif;
+        font-size: 1.25em;
+        font-weight: bold;
+        text-align: center;            
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: stretch;
+    
+}
+
+
+
+    nav ul {
+        
+            padding: 0;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+
+    }
+
+    
+    nav li {
+                background-color: #FF7546;
+                border-radius: 2em;
+                list-style-type: none;
+                margin: 0.3em;
+                padding: 0.5em;
+
+    }
+
+    nav a {
+        display: block;
+    }
+
+    nav ul li a:hover {
+        color: white
+    }
+
+    
+   
+
+    nav img {
+        display: none;
+    }
+
+}
