@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-img{
+.card img{
     max-width: 100%;
     height: auto;
 }
